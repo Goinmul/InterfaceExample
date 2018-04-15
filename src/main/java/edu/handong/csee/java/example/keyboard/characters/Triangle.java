@@ -38,7 +38,7 @@ public class Triangle extends ShapeBasics implements TriangleInterface {
 		 skipSpaces(startOfLine);
 		 System.out.println('*');
 		 
-		 int lineCount = base / 2 -1;
+		 int lineCount = base / 2 - 1;
 		 int insideWidth = 1;
 		 
 		 for(int count = 0; count < lineCount; count++) {
@@ -46,7 +46,7 @@ public class Triangle extends ShapeBasics implements TriangleInterface {
 			 skipSpaces(startOfLine);
 			 System.out.print('*');
 			 skipSpaces(insideWidth);
-			 System.out.print('*');
+			 System.out.println('*');
 			 
 			 insideWidth = insideWidth + 2;
 		 }
