@@ -36,6 +36,13 @@ public class Rectangle extends ShapeBasics implements RectangleInterface {
 			drawOneLineOfSides();
 	}
 	
+	 public void drawHere()
+	 {
+	     drawHorizontalLine();
+	     drawSides();
+	     drawHorizontalLine();
+	 }
+	
 	private void drawOneLineOfSides() {
 		skipSpaces(getOffset());
 		System.out.print('|');
