@@ -20,11 +20,20 @@ public class Fruit implements Comparable<Fruit> {
 	}
 
 	@Override
-	public int compareTo(Fruit o) {
-		if ((o != null) && (o instanceof Fruit)) {
-			Fruit otherFruit = (Fruit) o;
-			return (fruitName.compareTo(otherFruit.fruitName));
-		}
-		return -1; // Default if other object is not a Fruit
+	public int compareTo(Fruit otherFruit) {
+		return (fruitName.compareTo(otherFruit.fruitName));
 	}
+
+	/*
+	@Override
+	public int compareTo(Fruit otherFruit) {
+
+		if(fruitName.length() > otherFruit.fruitName.length())
+			return 1;
+		else if (fruitName.length() < otherFruit.fruitName.length())
+			return -1;
+		else
+			return 0;
+	}
+	 */
 }
